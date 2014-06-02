@@ -112,7 +112,7 @@ class JsonRequestResponseMixin(JSONResponseMixin):
                     {'message': 'Thanks!'})
     """
     require_json = False
-    error_response_dict = {u"errors": [u"Improperly formatted request"]}
+    error_response_dict = {"errors": ["Improperly formatted request"]}
 
     def render_bad_request_response(self, error_dict=None):
         if error_dict is None:
